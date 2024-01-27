@@ -1,0 +1,6 @@
+@use 'variables';
+
+@mixin btn-hover($bg-color: red) {
+    background-color: $bg-color;
+    color: variables.$white-color;
+}

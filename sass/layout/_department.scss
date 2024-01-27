@@ -1,0 +1,17 @@
+@use '../abstracts/variables';
+
+.department {
+    background: variables.$bg-light-color;
+
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+        margin-block: 50px;
+    }
+
+    &__btn {
+        margin-inline: auto;
+    }
+}

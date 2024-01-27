@@ -1,0 +1,49 @@
+.header {
+    background-image: url("../../assets/images/image2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    position: relative;
+    margin-bottom: 50px;
+
+    .wrapper {
+        position: fixed;
+        right: 0;
+        top: 250px;
+
+    }
+
+    .header--boxes {
+        position: absolute;
+        bottom: -50px;
+        left: 20%;
+
+        display: flex;
+
+
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 200px;
+        color: white;
+        font-family: serif;
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-block: 20px;
+        }
+
+        span {
+            font-size: 1.2rem;
+            text-decoration: underline;
+        }
+    }
+}

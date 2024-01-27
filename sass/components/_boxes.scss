@@ -1,0 +1,71 @@
+@use '../abstracts/variables';
+
+.box {
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+
+    img {
+        width: unset;
+        height: 32px;
+    }
+
+    span {
+        flex-grow: 1;
+        display: block;
+        width: 50%;
+        line-height: 23px;
+        color: variables.$white-color ;
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    &--secondary {
+        background-color: variables.$secondary-color;
+    }
+
+    &--primary {
+        background-color: variables.$primary-color;
+        color: variables.$white-color;
+
+        img {
+            padding-right: 15px;
+        }
+
+        label {
+            display: block;
+            // margin: -3px 0 0;
+            opacity: 0.5;
+            font-weight: 300;
+        }
+
+        strong {
+
+            font-weight: 400;
+            font-size: 22.4px;
+        }
+    }
+
+    &--noIcon {
+        background-color: variables.$secondary-color;
+        text-transform: uppercase;
+        padding: 38px 38px 38px 15px;
+        text-align: center;
+        color: variables.$white-color;
+
+        span {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        i {
+            border: white 2px solid;
+            border-radius: 100%;
+            padding: 5px;
+            margin-left: 10px;
+        }
+    }
+}

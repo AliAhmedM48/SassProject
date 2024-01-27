@@ -1,0 +1,29 @@
+.footer {
+    background-color: rgb(52, 56, 61);
+    color: white;
+    padding: 50px 0;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__ul {
+        &__title {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        table td:nth-child(3) {
+            color: white;
+            margin-left: 10px;
+            display: inline-block;
+        }
+
+        span {
+            font-size: 3rem;
+            margin-top: 20px;
+            display: inline-block;
+        }
+    }
+}

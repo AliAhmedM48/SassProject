@@ -1,0 +1,9 @@
+@use '../abstracts/variables';
+
+.info {
+    color: variables.$dark-color;
+    padding: 6px 10px;
+    display: inline-block;
+    font-size: 12.6px;
+    letter-spacing: -0.5px;
+}

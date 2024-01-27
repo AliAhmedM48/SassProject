@@ -1,0 +1,22 @@
+@use '../abstracts/variables';
+
+.feedback {
+    background-color: variables.$primary-color;
+    color: variables.$white-color;
+    text-align: center;
+
+    i {
+        border: 2px solid white;
+        padding: 15px;
+        border-radius: 100%;
+    }
+
+    blockquote {
+        max-width: 70%;
+        margin: 20px auto;
+    }
+
+    strong {
+        text-transform: uppercase;
+    }
+}

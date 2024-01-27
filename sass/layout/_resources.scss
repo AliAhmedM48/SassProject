@@ -1,0 +1,17 @@
+@use '../abstracts/variables';
+
+.resources {
+    background: variables.$bg-light-color;
+
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-block: 20px;
+    }
+
+    &__btn {
+        margin-inline: auto;
+    }
+}

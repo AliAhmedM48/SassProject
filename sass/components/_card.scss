@@ -1,0 +1,171 @@
+@use '../abstracts/variables';
+
+.fixed-card {
+    background-color: variables.$white-color;
+    padding: 0 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px 0 0 4px;
+    box-shadow: 0 0px 7px rgba(0, 0, 0, .07);
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    margin-bottom: 8px;
+    transition: box-shadow 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+
+    &:hover {
+        box-shadow: 0 0px 7px rgba(0, 0, 0, .4);
+    }
+
+    &:hover span {
+        transform: translateX(-150%);
+    }
+
+    i {
+        font-size: 24px;
+        color: #222529;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    span {
+        position: relative;
+        display: inline-block;
+        transition: transform 0.85s ease;
+        color: #222529;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 19px;
+        margin-bottom: 0;
+        letter-spacing: -0.4px;
+        width: fit-content;
+
+        &::after {
+            content: attr(data-text);
+            position: absolute;
+            white-space: nowrap;
+            top: 50%;
+            transition: inherit;
+            left: 100%;
+            width: fit-content;
+            transform: translate(50%, -50%);
+        }
+    }
+
+}
+
+// 
+
+.card--icon {
+    // width: 400px;
+    display: flex;
+
+    &__icon {
+        // width: 20%;
+
+        img {
+            width: unset;
+        }
+    }
+
+    &__text {
+        padding-left: 15px;
+
+        h3 {
+            color: #008fe2;
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 14px;
+        }
+
+    }
+}
+
+// 
+
+.card--image {
+    border: solid #00000075 1px;
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+
+    &:hover i {
+        border: 2px solid white;
+    }
+
+    &:hover &__text {
+        background: variables.$secondary-color;
+        color: variables.$white-color;
+    }
+
+    &:hover h3,
+    &:hover p,
+    &:hover i {
+        color: variables.$white-color;
+    }
+
+    &__image {
+        overflow: hidden;
+
+        img {
+            transition: all 0.5s;
+        }
+    }
+
+    &__text {
+        position: relative;
+        display: block;
+        padding: 25px 15px 23px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.5s;
+
+        h3 {
+            font-weight: 300;
+            font-size: 1rem;
+            color: variables.$dark-color;
+        }
+
+        p {
+            font-size: 1.1875rem;
+            color: variables.$black-color;
+        }
+
+        i {
+            border: black 2px solid;
+            border-radius: 100%;
+            padding: 5px;
+        }
+    }
+
+}
+
+// 
+.card--imagetop {
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: 10px 10px 74px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &__text {
+        padding: 30px;
+        font-size: 1em;
+        line-height: 24px;
+
+        h3 {
+            font-size: 1.3em;
+            line-height: 27px;
+            font-weight: 600;
+            color: variables.$black-color;
+        }
+    }
+}

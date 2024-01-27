@@ -1,0 +1,19 @@
+@use '../abstracts/variables';
+
+.section-title {
+    &__title {
+        margin-block: 20px 5px;
+        text-align: left;
+        color: variables.$black-color;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+
+    &__paragraph {
+        line-height: 1.8rem;
+        letter-spacing: -0.05em;
+        font-size: 17.5px;
+        color: variables.$dark-color;
+    }
+}

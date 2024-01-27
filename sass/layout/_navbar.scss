@@ -1,0 +1,30 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+
+
+.navbar {
+    &__info {
+        text-align: right;
+        padding-block: 10px;
+    }
+
+    &__list {
+        .active {
+            @include mixins.btn-hover(variables.$primary-color);
+        }
+
+        display: flex;
+        justify-content: space-between;
+        margin-block:20px;
+
+        ul {
+            display: flex;
+            gap: 4px;
+        }
+
+        .logo {
+            width: 15%;
+        }
+    }
+}
